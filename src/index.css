@@ -1,3 +1,91 @@
+.to-do-list{ 
+  /* formato de letra de to-do-list */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100 px;
+}
+h1{
+  font-size: 4rem; 
+  /* size de las letras en h1 */
+  color: white;
+}
+button{
+  font-size: 1.7 rem;
+  /* size de las letras en los botones */
+  font-weight: bold;
+  /* fuente en negrita */
+  padding: 10 px 20 px;
+  /* defines the space between an element's content and its border */
+  color: white;
+  /* color de la letra */
+  border: none;
+  /* ningun borde */
+  border-radius: 5 px;
+  /* esquinas de los bordes */
+  cursor: pointer;
+  /* el cursor apunta cuando esta sobre el boton */
+  transition: background-color 5s ease ;
+  /* el color del boton dura 0.5 s para cambiar cuando tiene el puntero encima */
+}
+.add-button{
+  /* color del boton add */
+  background-color: rgb(76, 76, 226);
+}
+.add-button:hover{
+  /* color del boton al poner el cursor encima */
+  background-color: rgba(76, 76, 226, 0.778);
+}
+.delete-button{
+  background-color: hsl(358, 72%, 59%);
+}
+.delete-button:hover{
+  background-color:  hsla(358, 72%, 45%);
+}
+.move-button{
+  background-color:  hsl(183, 93%, 47%);
+}
+.move-button:hover{
+  background-color:  hsla(183, 93%, 37%);
+}
+input[type="text"]{
+  font-size: 1.9rem;
+  /* tamaño de las letras dentro de la casilla */
+  padding: 10 px;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+  /* color del borde de la casilla */
+  border-radius: 5px;
+  color: hsl(0, 0%, 5%);
+}
+ol{
+  padding: 0;
+  /* hace que la lista ordenada no tenga numeros */
+}
+li{
+  font-size: 1.5rem;
+  /* tamano de las letras de la lista */
+  font-weight: bold;
+  /* letra en negrita */
+  padding: 10px;
+  background-color: hsl(0, 0%, 97%); 
+  /* color de fondo de los items de la lista */
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  /* separa los items y botones */
+  align-items: center;
+  /* alinea en el centro  */
+}
+.text{
+  flex: 1;
+  /* para separar los botones de las letras */
+}
+.delete-button, .move-button{
+  padding: 8px 12 px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,8 +93,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(0, 0%, 10%);
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
